@@ -1,6 +1,6 @@
 from django.core.handlers.wsgi import WSGIRequest
-from django.http import HttpResponse
+from inertia import render
 
 
 def hello_world_view(request: WSGIRequest):
-    return HttpResponse("hello world!")
+    return render(request, "app.vue", props={"title": "hello world!"})
