@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "embalae-backend"
+name = "inertially-backend"
 version = "0.1.0"
 description = ""
 authors = ["joaoprocopio <joaovitorcprocopio@gmail.com>"]
@@ -11,6 +11,8 @@ python = "^3.12"
 django = "^5.1.1"
 inertia-django = "^0.6.0"
 
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.8"
 
 [build-system]
 requires = ["poetry-core"]
